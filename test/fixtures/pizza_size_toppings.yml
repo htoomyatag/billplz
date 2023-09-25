@@ -1,0 +1,23 @@
+pizza_size_toppings_one:
+  pizza_size: small
+  topping: pepperoni_small
+
+pizza_size_toppings_two:
+  pizza_size: medium
+  topping: pepperoni_medium
+
+pizza_size_toppings_three:
+  pizza_size: small
+  topping: extra_cheese
+
+pizza_size_toppings_four:
+  pizza_size: medium
+  topping: pepperoni_medium
+
+pizza_size_toppings_five:
+  pizza_size: medium
+  topping: extra_cheese
+
+pizza_size_toppings_six:
+  pizza_size: large
+  topping: extra_cheese

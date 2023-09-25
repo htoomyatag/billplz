@@ -1,0 +1,11 @@
+small:
+  name: Small
+  base_price: 15.0
+
+medium:
+  name: Medium
+  base_price: 22.0
+
+large:
+  name: Large
+  base_price: 30.0

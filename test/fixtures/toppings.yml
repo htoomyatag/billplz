@@ -1,0 +1,11 @@
+pepperoni_small:
+  name: Pepperoni for Small Pizza
+  price: 3.0
+
+pepperoni_medium:
+  name: Pepperoni for Medium Pizza
+  price: 5.0
+
+extra_cheese:
+  name: Extra Cheese
+  price: 6.0
