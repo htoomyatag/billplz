@@ -1,25 +1,45 @@
-# README
+# Pizza Ordering API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple pizza ordering program.
 
-Things you may want to cover:
+## About the Project
+- Ruby 3.1.2
+- Rails 7.0.8
+- Database Sqlite
 
-* Ruby version
+## Getting Started
+```bash
+git clone https://github.com/htoomyatag/billplz.git
+cd billplz
+bundle install
 
-* System dependencies
+rake db:create
+rake db:migrate
+rake db:seed
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# billplz
+rails server
+```
+## Usage
+Open new terminal
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{
+  "orders": [
+    {
+      "pizza_size_id": 1,
+      "topping_ids": [1, 3]
+    },
+    {
+      "pizza_size_id": 2,
+      "topping_ids": [2, 3]
+    },
+    {
+      "pizza_size_id": 3,
+      "topping_ids": [3]
+    }
+  ]
+}' http://localhost:3000/pizza_orders
+```
+## Testing
+```bash
+rails test
+```
